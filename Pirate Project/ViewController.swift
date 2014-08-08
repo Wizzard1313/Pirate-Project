@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StartViewController.swift
 //  Pirate Project
 //
 //  Created by Bruce Milyko on 7/21/14.
@@ -8,18 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StartViewController: UIViewController {
+    @IBOutlet weak var startBackground: UIImageView!
                             
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.startBackground.image = UIImage(named: pickPicture())
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
